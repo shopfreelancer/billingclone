@@ -2,7 +2,7 @@
 /**
  * This file is loaded automatically by the app/webroot/index.php file after core.php
  *
- * This file should load/create any application wide configuration settings, such as 
+ * This file should load/create any application wide configuration settings, such as
  * Caching, Logging, loading additional configuration files.
  *
  * You should also use this file to include any files that provide global functions/constants
@@ -166,13 +166,13 @@ Configure::write('Dispatcher.filters', array(
 ));
 
 
-    Configure::write('Cryptable.cipher', 'tripledes'); 
-    Configure::write('Cryptable.key',''); 
-    $td = mcrypt_module_open('tripledes', '', 'ecb', ''); 
-    $iv = mcrypt_create_iv (mcrypt_enc_get_iv_size($td), MCRYPT_RAND); 
-    mcrypt_module_close($td); 
-    Configure::write('Cryptable.iv', $iv); 
-	
+    Configure::write('Cryptable.cipher', 'tripledes');
+    Configure::write('Cryptable.key','');
+    $td = mcrypt_module_open('tripledes', '', 'ecb', '');
+    $iv = mcrypt_create_iv (mcrypt_enc_get_iv_size($td), MCRYPT_RAND);
+    mcrypt_module_close($td);
+    Configure::write('Cryptable.iv', $iv);
+
 	Configure::write('Invoice.Path',dirname(dirname(__FILE__)).'/Documents/');
 
 /**
