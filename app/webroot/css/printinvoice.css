@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+#invoiceview {font-size:18px; line-height:22px;}
+#mainlistingright, #footer, #header, .edititem, .deleteitem, #main h2, #invoicestatus, #flashMessage, a.newbuttonsmall, a.deletebuttonsmall {display:none;}
+#mainlisting {width:100%!important;}
+#invoiceview .ivcompany {margin:0 0px 0 0;}
+#invoiceview .ivcustomeraddress {line-height:22px;}
+#printlogo {display:block;float:left;margin-bottom:120px;}
+.tably {font-size:12px;}	
+#ivbreakdown table tr.title td {font-size:12px;}
+
+.ivcustomeraddress {
+    clear: both;
+	line-height: 22px;
+    margin: 0 0 20px 0px;
+}
+
+.ivfooter {margin-top:40px;}

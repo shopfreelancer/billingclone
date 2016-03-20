@@ -1,0 +1,545 @@
+/* 
+  HTML5 ✰ Boilerplate 
+  
+  style.css contains a reset, font normalization and some base styles.
+  
+  credit is left where credit is due.
+  much inspiration was taken from these projects:
+    yui.yahooapis.com/2.8.1/build/base/base.css
+    camendesign.com/design/
+    praegnanz.de/weblog/htmlcssjs-kickstart
+*/
+
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+
+/* END RESET CSS */
+
+
+/* fonts.css from the YUI Library: developer.yahoo.com/yui/
+   Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages
+
+  There are three custom edits:
+   * remove arial, helvetica from explicit font stack
+   * we normalize monospace styles ourselves
+   * table font-size is reset in the HTML5 reset above so there is no need to repeat
+*/
+body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+
+select, input, textarea, button { font:99% sans-serif; }
+
+/* normalize monospace sizing 
+ * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
+ */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+ 
+
+/* 
+ * minimal base styles 
+ */
+
+
+body, select, input, textarea { 
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
+  color: #444; 
+  /* set your base font here, to apply evenly */
+  /* font-family: Georgia, serif;  */   
+}
+
+/* Headers (h1,h2,etc) have no default font-size or margin,
+   you'll want to define those yourself. */ 
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+
+/* always force a scrollbar in non-IE */ 
+html { overflow-y: scroll; }
+
+ 
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+a, a:active, a:visited { color: #948F75; }
+a:hover { color: #c0b787; }
+
+
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; } 
+
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+
+td, td img { vertical-align: top; } 
+
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+pre { 
+  padding: 15px; 
+  
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+ 
+textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+.ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
+
+/* align checkboxes, radios, text inputs with their label
+   by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+ 
+/* webkit browsers add a 2px margin outside the chrome of form elements */  
+button, input, select, textarea { margin: 0; }
+
+/* colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { 
+      border-radius: 1px;
+    -moz-box-shadow: 0px 0px 5px red; 
+ -webkit-box-shadow: 0px 0px 5px red; 
+         box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301 
+   Also: hot pink. */
+::-moz-selection{ background: #ccc; color:#fff; text-shadow: none; }
+::selection { background:#ccc; color:#fff; text-shadow: none; } 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+/* make buttons play nice in IE:    
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+ 
+/* bicubic resizing for non-native sized IMG: 
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+
+/* 
+ * Non-semantic helper classes 
+ */
+
+/* for image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; } 
+
+/* Hide only visually, but have it available for screenreaders 
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden { position: absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+/*
+ * Media queries for responsive design
+ * These follow after primary styles so they will successfully override. 
+ */
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+  
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust 
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+/* 
+ * print styles
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ */
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+body {background:#989898;}
+#header {height:60px; background: #e7e7e7; padding:10px 10px 10px 10px; border-bottom: 1px solid #CCCCCC;}
+#header h1 {font-size:28px;text-align:right;}
+#main {padding:0 10px;}
+#main h2 {font-size:20px; margin:20px 0 5px 0; border-bottom: 1px solid #CCCCCC;}
+#mainleft {width:390px; float:left; margin-top:20px;}
+#mainright {width:390px; float:left;margin-top:20px;}
+#mainlisting {width:640px; float:left;}
+#mainlistingright { padding: 0 0 0 10px; width: 210px; float:left;}
+#footer {height:10px; background: #e7e7e7; padding:10px; margin: 10px 0 0;}
+a.footerlink {text-decoration:none; font-weight:bold; margin: 0 10px 0 0;}
+#container {width:880px; margin:0 auto; background:#fff;}
+#menu {margin:5px 0 0 0;}
+#menu a {font-size:18px; color:#948f75; font-weight:bold; background:none; padding:3px 8px 1px 8px; margin:0 4px 0 0; display:block; float:left; text-decoration:none; -moz-border-radius:6px; border-radius: 6px; -webkit-border-radius:6px;}
+#menu a:hover, #menu a:active  {background:#ccc; }
+
+[type="text"], input[type="password"], textarea, select {
+    -moz-border-radius: 5px 5px 5px 5px;
+    background-color: #F0F0F0;
+    border-color: #DDDDDD #D0D0D0 #D0D0D0 #DDDDDD;
+    border-right: 1px solid #D0D0D0;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    padding: 2px;
+}
+.input {clear:both; margin:0 0 10px 0;height:30px; position:relative; }
+.input label {width:150px; float:left;}
+.text input, .password input {width:220px; float:left; height:25px;}
+
+.users_form {
+margin:0 0 20px 0;
+display: inline-block;
+}
+
+.textare label {width:80px; float:left;}
+.textarea textarea {width:100%;}
+.textarea {height:auto;}
+.submitbutton {    
+	-moz-border-radius: 6px 6px 6px 6px;
+    background: #00be2d;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 4px 0 0;
+    padding: 3px 8px 1px;
+    text-decoration: none;
+	border:0;
+}
+a.cancelbutton {    
+	-moz-border-radius: 6px 6px 6px 6px;
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #CCCCCC;
+    color: #D12F19;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 4px 0 0;
+    padding: 3px 8px 1px;
+    text-decoration: none;
+}
+a.newbutton {    
+	-moz-border-radius: 6px 6px 6px 6px;
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #CCCCCC;
+    color: #24b411;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 4px 0 0;
+    padding: 3px 8px 1px;
+    text-decoration: none;
+}
+
+a.newbuttonsmall {    
+	-moz-border-radius: 6px 6px 6px 6px;
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #CCCCCC;
+    color: #24b411;
+    display: block;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 4px 0 0;
+    padding: 3px 8px 1px;
+    text-decoration: none;
+}
+
+a.deletebuttonsmall {    
+	-moz-border-radius: 6px 6px 6px 6px;
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #CCCCCC;
+    color: #D12F19;
+    display: block;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 4px 0 0;
+    padding: 3px 8px 1px;
+    text-decoration: none;
+}
+
+#mainlistingright .newbutton, #mainlistingright .cancelbutton {margin:0 0 6px 0;}
+.formfooter {clear:both; height:40px;}
+.error-message {position:absolute; left:0px; bottom:0px; color:red;}
+
+.customerviewaddress {float:left; width:250px;margin: 0 0 20px 0;}
+.customerviewinfo {float:left; width:250px;}
+.customerviewnote {clear:both; width:440px; margin: 0 0 10px 0;}
+.customerviewkundennummer {color:#ccc; margin:0 0 20px 0;}
+.customertable th {text-align:left; padding:0 5px 0 0; border-bottom: 1px solid #000;}
+.customertable td {text-align:left; padding:2px 5px 10px 0; border-bottom: 1px solid #ccc; height:50px;}
+.roweven {background:#F0F0F0;}
+.rowodd {background:#F9F9F9;}
+
+#invoiceview p {margin:0 0 10px 0;}
+#printlogo {display:none;}
+#invoiceview .ivcompany {text-align:right; float:right;}
+#invoiceview .ivanrede {margin:0 0 10px 0;}
+#invoiceview .ivdate {text-align:right;}
+
+#invoiceview .ivgreetings {margin-top:10px;}
+#invoiceview .ivsum {margin-top:10px;}
+#invoiceview .ivcustomeraddress {
+    clear: both;
+}
+
+#invoiceview .betreffwrap {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    padding: 10px 0;
+	margin: 0 0 10px 0;
+}
+
+#ivbreakdown {padding-top:50px;}
+#ivbreakdown table {width:100%; font-size:12px;}
+
+#ivbreakdown table, #ivbreakdown tr, #ivbreakdown td {    
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: top;
+	}
+#ivbreakdown table td {font-size:12px;}
+
+#ivbreakdown .sum_amount {text-align:right;}
+
+.total sum_descr, .total {font-weight:bold;}	
+	
+#ivbreakdown table tr.title td {
+    background-color: #F5F5F5 !important;
+    color: #616161;
+}
+
+#ivbreakdown table tr td {
+    color: #999999;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px;
+}
+
+#ivbreakdown #sumtable {
+margin:10px 0 0 0;
+float:right; 
+width: 270px;
+}
+
+.ivgreetings #bottom {
+margin:10px 0 0 20px;
+}
+
+.ivfooter {
+	font-size:11px;
+	line-height: 15px;
+	color:#999;
+	border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.ivfootercol {
+    float: left;
+    width: 33%;
+}
+
+.grey {color:#ccc;}
+
+#flashMessage {
+    background: none repeat scroll 0 0 green;
+    color: #FFFFFF;
+    line-height: 16px;
+    padding: 2px 4px 2px 20px;
+}
+#error_container {height:20px; margin:2px 0 0 0;}
+
+#pagination {padding:2px;}
+
+
+.blog_heading {color:#948F75; font-weight:bold;}
+.blog_entry {padding:5px 5px 5px 68px;}
+
+#version {float:right;color:#999;}
+
+
+#livesearch {position:relative;}
+#searchcontainer {
+ background: none repeat scroll 0 0 #F0F0F0;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 40px;
+	width:160px;
+}
+
+.livesearch_even {
+ background: none repeat scroll 0 0 #F0F0F0;
+}
+.livesearch_odd {
+ background: none repeat scroll 0 0 #F9F9F9;
+}
+
+#searchcontainer a {text-decoration:none;}
+
+.footerlogout {margin:0 20px 0 0 !important;}
+
+.sendemailreviewtext {font-weight:bold;}
+
+.cview_price {
+text-align: right;
+width: 95px;
+display:inline-block;
+}
+
+.cview_type {
+text-align: left;
+width: 70px;
+display:inline-block;
+}
+
+.cview_status {
+text-align: left;
+width: 60px;
+display:inline-block;
+}
+
+.sendemailbutton {
+margin: 0 0 0 440px !important;
+}
+
+.akquise_stata_headline {
+font-weight:bold;
+margin:0 0 10px 0;
+}
+
+.akquise_stata_block {
+width:33%;
+float:left;
+margin:0 0 15px 0;
+line-height: 1.3em;
+}
+.akquise_stata_desc {
+width:90%;
+float:left;
+}
+
+.akquise_stata_value {
+width:10%;
+float:right;
+}
+
+.akquise_stata_block_last {
+clear:both;
+border-top: 1px solid #CCCCCC;
+padding: 10px 0 0;
+}
+
+.akquise_row {
+display:inline-block;
+width: 100%;
+}

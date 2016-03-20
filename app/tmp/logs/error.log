@@ -1,0 +1,1429 @@
+2013-05-09 11:37:30 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/billingclone2/app/Controller/InvoicesController.php, line 361]
+2013-05-09 11:37:30 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 361)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 361, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 361, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 11:56:32 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/billingclone2/app/View/Invoices/send_email_review.ctp" is missing.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-09 11:56:44 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/billingclone2/app/View/Invoices/send_email_review.ctp" is missing.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-09 11:57:42 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/billingclone2/app/View/Invoices/send_email_review.ctp" is missing.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-09 12:05:31 Error: Fatal Error (4): syntax error, unexpected 'sendemailreviewtext' (T_STRING), expecting ',' or ';' in [/Applications/MAMP/htdocs/billingclone2/app/View/Invoices/send_email_review.ctp, line 4]
+2013-05-09 12:05:31 Error: [FatalErrorException] syntax error, unexpected 'sendemailreviewtext' (T_STRING), expecting ',' or ';'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 4, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 4, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:20:32 Error: Fatal Error (1): Call to undefined method InvoicesController::generateInvoiceEmailBody() in [/Applications/MAMP/htdocs/billingclone2/app/Controller/InvoicesController.php, line 378]
+2013-05-09 12:20:33 Error: [FatalErrorException] Call to undefined method InvoicesController::generateInvoiceEmailBody()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 378)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 378, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 378, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:28:00 Error: [MissingActionException] Action CompaniesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 12:28:00 Error: [MissingActionException] Action CompaniesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 12:45:05 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp, line 55]
+2013-05-09 12:45:05 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 55, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 55, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:45:14 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in [/Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp, line 55]
+2013-05-09 12:45:14 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 55, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 55, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:45:23 Error: Fatal Error (4): syntax error, unexpected '.' in [/Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp, line 58]
+2013-05-09 12:45:23 Error: [FatalErrorException] syntax error, unexpected '.'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:45:45 Error: Fatal Error (4): syntax error, unexpected '.' in [/Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp, line 58]
+2013-05-09 12:45:45 Error: [FatalErrorException] syntax error, unexpected '.'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:46:02 Error: Fatal Error (4): syntax error, unexpected '.' in [/Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp, line 58]
+2013-05-09 12:46:02 Error: [FatalErrorException] syntax error, unexpected '.'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 12:46:04 Error: Fatal Error (4): syntax error, unexpected '.' in [/Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp, line 58]
+2013-05-09 12:46:04 Error: [FatalErrorException] syntax error, unexpected '.'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 58, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 13:22:18 Error: [MissingHelperException] Helper class InvoiceHelper could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Invoice')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(812): HelperCollection->__isset('Invoice')
+#2 /Applications/MAMP/htdocs/billingclone2/app/View/Customers/view.ctp(49): View->__get('Invoice')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#7 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-09 13:41:13 Error: [MissingActionException] Action CustomerTicketsController::sendMail() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomerTicketsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 13:41:13 Error: [MissingActionException] Action CustomerTicketsController::sendMail() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomerTicketsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 13:41:14 Error: [MissingActionException] Action CustomerTicketsController::sendMail() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomerTicketsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 14:08:32 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 125]
+2013-05-09 14:08:32 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/M...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:08:33 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 125]
+2013-05-09 14:08:33 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/M...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:08:33 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 125]
+2013-05-09 14:08:33 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/M...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:08:34 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 125]
+2013-05-09 14:08:34 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/M...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:08:58 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 125]
+2013-05-09 14:08:58 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/M...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:08:59 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 125]
+2013-05-09 14:08:59 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/M...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/M...', 125, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:09:23 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 134]
+2013-05-09 14:09:23 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:09:23 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 134]
+2013-05-09 14:09:23 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:09:55 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 134]
+2013-05-09 14:09:55 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 14:09:56 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 134]
+2013-05-09 14:09:56 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 134, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:15:02 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 15:15:02 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-09 15:44:33 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:44:33 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:44:33 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:44:33 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:44:33 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:44:33 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:44:33 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:44:33 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:46:03 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:46:03 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:46:03 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:46:03 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:46:14 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:46:14 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:46:45 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:46:45 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:47:20 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:47:20 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 15:47:20 Error: Fatal Error (1): Call to undefined method EmailhelperComponent::getEventManager() in [/Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php, line 320]
+2013-05-09 15:47:20 Error: [FatalErrorException] Call to undefined method EmailhelperComponent::getEventManager()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 320)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 320, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-09 16:00:04 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/CustomerTicketsController.php, line 100]
+2013-05-09 16:00:04 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 100, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 100, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 12:28:02 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-10 12:28:02 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-10 12:45:56 Error: Fatal Error (1): Class 'CakeTime' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/Component/EmailhelperComponent.php, line 110]
+2013-05-10 12:45:56 Error: [FatalErrorException] Class 'CakeTime' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeTime...', '/Applications/M...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 12:48:49 Error: Fatal Error (1): Class 'CakeTime' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/Component/EmailhelperComponent.php, line 110]
+2013-05-10 12:48:49 Error: [FatalErrorException] Class 'CakeTime' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeTime...', '/Applications/M...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 12:49:15 Error: Fatal Error (1): Class 'CakeTime' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/Component/EmailhelperComponent.php, line 110]
+2013-05-10 12:49:15 Error: [FatalErrorException] Class 'CakeTime' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeTime...', '/Applications/M...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 12:50:23 Error: Fatal Error (1): Class 'CakeTime' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/Component/EmailhelperComponent.php, line 110]
+2013-05-10 12:50:23 Error: [FatalErrorException] Class 'CakeTime' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeTime...', '/Applications/M...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 12:51:00 Error: Fatal Error (1): Class 'CakeTime' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/Component/EmailhelperComponent.php, line 110]
+2013-05-10 12:51:00 Error: [FatalErrorException] Class 'CakeTime' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeTime...', '/Applications/M...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 12:51:00 Error: Fatal Error (1): Class 'CakeTime' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/Component/EmailhelperComponent.php, line 110]
+2013-05-10 12:51:00 Error: [FatalErrorException] Class 'CakeTime' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeTime...', '/Applications/M...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeTime...', '/Applications/M...', 110, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-10 14:42:35 Error: [MissingActionException] Action InvoicesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-10 14:42:35 Error: [MissingActionException] Action InvoicesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 09:19:51 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 09:19:51 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 09:20:05 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-11 09:20:10 Error: [MissingControllerException] Controller class AkquiseController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-11 09:20:23 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-11 09:20:28 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/add.ctp" is missing.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-11 09:20:28 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 09:20:28 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 09:20:53 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/add.ctp" is missing.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-11 09:21:15 Error: [MissingTableException] Table akquises for model Akquise was not found in datasource default.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('akquises')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('Akquise', 'fields')
+#4 /Applications/MAMP/htdocs/billingclone2/app/View/Akquises/add.ctp(5): FormHelper->create('Akquise')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-11 09:59:49 Error: Fatal Error (4): syntax error, unexpected 'type' (T_STRING) in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/add.ctp, line 13]
+2013-05-11 09:59:49 Error: [FatalErrorException] syntax error, unexpected 'type' (T_STRING)
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-11 09:59:49 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 09:59:50 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 10:00:39 Error: Fatal Error (4): syntax error, unexpected 'type' (T_STRING) in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/add.ctp, line 13]
+2013-05-11 10:00:39 Error: [FatalErrorException] syntax error, unexpected 'type' (T_STRING)
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-11 10:09:22 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php, line 17]
+2013-05-11 10:09:22 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-11 10:09:22 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php, line 17]
+2013-05-11 10:09:22 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-11 10:09:22 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php, line 17]
+2013-05-11 10:09:22 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-11 10:09:22 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php, line 17]
+2013-05-11 10:09:22 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-11 10:14:04 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-11 10:14:05 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-12 12:55:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-12 12:55:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-12 12:55:30 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-12 12:55:30 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-12 13:01:31 Error: Fatal Error (4): syntax error, unexpected '?' in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 14]
+2013-05-12 13:01:31 Error: [FatalErrorException] syntax error, unexpected '?'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 13:07:38 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-12 13:07:38 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-12 13:07:39 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-12 13:21:18 Error: Fatal Error (4): syntax error, unexpected '.' in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 13]
+2013-05-12 13:21:18 Error: [FatalErrorException] syntax error, unexpected '.'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 13:26:05 Error: Fatal Error (4): syntax error, unexpected 'akquise_stata_headline' (T_STRING), expecting ',' or ';' in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 10]
+2013-05-12 13:26:05 Error: [FatalErrorException] syntax error, unexpected 'akquise_stata_headline' (T_STRING), expecting ',' or ';'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 13:33:39 Error: Fatal Error (4): syntax error, unexpected 'return' (T_RETURN) in [/Applications/MAMP/htdocs/billingclone2/app/View/Helper/AkquiseHelper.php, line 38]
+2013-05-12 13:33:39 Error: [FatalErrorException] syntax error, unexpected 'return' (T_RETURN)
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 13:43:59 Error: Fatal Error (4): syntax error, unexpected 'as' (T_AS), expecting variable (T_VARIABLE) or '$' in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 53]
+2013-05-12 13:43:59 Error: [FatalErrorException] syntax error, unexpected 'as' (T_AS), expecting variable (T_VARIABLE) or '$'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 53, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 53, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 14:08:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00 AND DATE_ADD(2013-04-01 00:00:00,INTERVAL 1 MONTH);
+	GROUP BY kontaktme' at line 2
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT kontaktm...', Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT kontaktm...', Array, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('SELECT kontaktm...')
+#4 [internal function]: DboSource->query('SELECT kontaktm...')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(2996): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php(17): Model->query('SELECT kontaktm...')
+#7 [internal function]: AkquiseController->index()
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquiseController), Array)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-12 14:08:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00 AND DATE_ADD(2013-04-01 00:00:00,INTERVAL 1 MONTH)
+	GROUP BY kontaktmed' at line 2
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT kontaktm...', Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT kontaktm...', Array, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('SELECT kontaktm...')
+#4 [internal function]: DboSource->query('SELECT kontaktm...')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(2996): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php(17): Model->query('SELECT kontaktm...')
+#7 [internal function]: AkquiseController->index()
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquiseController), Array)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-12 14:09:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00 AND DATE_ADD(2013-04-01 00:00:00,INTERVAL 1 MONTH)
+	GROUP BY kontaktmed' at line 2
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT kontaktm...', Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT kontaktm...', Array, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('SELECT kontaktm...')
+#4 [internal function]: DboSource->query('SELECT kontaktm...')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(2996): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php(17): Model->query('SELECT kontaktm...')
+#7 [internal function]: AkquiseController->index()
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquiseController), Array)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-12 14:09:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00 AND DATE_SUB(2013-04-01 00:00:00,INTERVAL 1 MONTH)
+	GROUP BY kontaktmed' at line 2
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT kontaktm...', Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT kontaktm...', Array, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('SELECT kontaktm...')
+#4 [internal function]: DboSource->query('SELECT kontaktm...')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(2996): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php(17): Model->query('SELECT kontaktm...')
+#7 [internal function]: AkquiseController->index()
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquiseController), Array)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-12 14:11:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00 AND LAST_DAY(2013-04-01 00:00:00)
+	GROUP BY kontaktmedium' at line 2
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT kontaktm...', Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT kontaktm...', Array, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('SELECT kontaktm...')
+#4 [internal function]: DboSource->query('SELECT kontaktm...')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(2996): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php(17): Model->query('SELECT kontaktm...')
+#7 [internal function]: AkquiseController->index()
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquiseController), Array)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-12 14:19:15 Error: [MissingActionException] Action AkquisesController::04-2013() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-12 14:21:18 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 6]
+2013-05-12 14:21:18 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 14:22:13 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 6]
+2013-05-12 14:22:13 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-12 14:23:20 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/MAMP/htdocs/billingclone2/app/View/Akquises/index.ctp, line 6]
+2013-05-12 14:23:20 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 09:11:14 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 09:11:14 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 09:19:31 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 09:19:31 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 09:46:32 Error: Fatal Error (4): syntax error, unexpected '{' in [/Applications/MAMP/htdocs/billingclone2/app/View/Helper/AkquiseHelper.php, line 132]
+2013-05-13 09:46:32 Error: [FatalErrorException] syntax error, unexpected '{'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 132)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 132, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 132, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 10:04:45 Error: Fatal Error (4): syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquiseController.php, line 15]
+2013-05-13 10:04:45 Error: [FatalErrorException] syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 15, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 15, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 10:08:20 Error: [MissingActionException] Action AkquisesController::2012-4() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquiseController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 10:16:03 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 10:16:39 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 10:16:44 Error: [MissingControllerException] Controller class AkquisesController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 10:17:09 Error: [MissingControllerException] Controller class AkquiseController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 10:17:32 Error: [MissingControllerException] Controller class AkquiseController could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 10:57:46 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 10:57:47 Error: [MissingActionException] Action AkquisesController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 11:30:05 Error: [SocketException] Invalid email: " h.scherping@eickmeyer.com"
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Network/Email/CakeEmail.php(427): CakeEmail->_setEmail('_to', ' h.scherping@ei...', NULL)
+#1 /Applications/MAMP/htdocs/billingclone2/app/Controller/InvoicesController.php(382): CakeEmail->to(' h.scherping@ei...')
+#2 [internal function]: InvoicesController->sendEmail('263')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-05-13 14:01:55 Error: Fatal Error (4): syntax error, unexpected '"Keine Zeit mich darum zu küm' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Applications/MAMP/htdocs/billingclone2/app/View/Helper/AkquiseHelper.php, line 122]
+2013-05-13 14:01:55 Error: [FatalErrorException] syntax error, unexpected '"Keine Zeit mich darum zu küm' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 122, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 122, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 14:19:33 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php, line 78]
+2013-05-13 14:19:33 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 78, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 78, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 14:23:07 Error: Fatal Error (4): syntax error, unexpected '"Bestehender Shop hat Bugs"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Applications/MAMP/htdocs/billingclone2/app/View/Helper/AkquiseHelper.php, line 98]
+2013-05-13 14:23:07 Error: [FatalErrorException] syntax error, unexpected '"Bestehender Shop hat Bugs"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 98, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 98, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 15:42:05 Error: Fatal Error (1): Call to a member function getArbeitsinhaltValues() on a non-object in [/Applications/MAMP/htdocs/billingclone2/app/View/Helper/AkquiseHelper.php, line 138]
+2013-05-13 15:42:05 Error: [FatalErrorException] Call to a member function getArbeitsinhaltValues() on a non-object
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 138)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 138, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 138, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 17:14:11 Error: Fatal Error (1): Call to undefined function imap_start() in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php, line 23]
+2013-05-13 17:14:11 Error: [FatalErrorException] Call to undefined function imap_start()
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 23, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 23, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 17:30:10 Error: Fatal Error (1): Class 'ImapMailbox' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php, line 94]
+2013-05-13 17:30:10 Error: [FatalErrorException] Class 'ImapMailbox' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'ImapMail...', '/Applications/M...', 94)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImapMail...', '/Applications/M...', 94, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'ImapMail...', '/Applications/M...', 94, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 17:30:38 Error: Fatal Error (1): Class 'ImapMailbox' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php, line 94]
+2013-05-13 17:30:38 Error: [FatalErrorException] Class 'ImapMailbox' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'ImapMail...', '/Applications/M...', 94)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImapMail...', '/Applications/M...', 94, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'ImapMail...', '/Applications/M...', 94, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 17:30:54 Error: Fatal Error (1): Class 'ImapMailbox' not found in [/Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php, line 94]
+2013-05-13 17:30:54 Error: [FatalErrorException] Class 'ImapMailbox' not found
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'ImapMail...', '/Applications/M...', 94)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImapMail...', '/Applications/M...', 94, Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'ImapMail...', '/Applications/M...', 94, Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 17:32:15 Error: [Exception] Directory "/Applications/MAMP/htdocs/billingclone2/app/Controller/attachments" not found
+#0 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(94): ImapMailbox->__construct('{imap.gmail.com...', 'hanschristian.p...', 'gghh55jjkk', '/Applications/M...', 'utf-8')
+#1 [internal function]: AkquisesController->readMail()
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-13 17:32:53 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}INBOX: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(98): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:05:14 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}INBOX: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(101): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:05:55 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}INBOX: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(101): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:08:11 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(101): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:08:13 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(101): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:09:03 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:09:06 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:09:21 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:09:23 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:09:36 Error: [Exception] Directory "/Applications/MAMP/htdocs/billingclone2/app/Controller/attachments" not found
+#0 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(100): ImapMailbox->__construct('{imap.gmail.com...', 'hanschristian.p...', 'gghh55jjkk', '/Applications/M...', 'utf-8')
+#1 [internal function]: AkquisesController->readMail()
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-13 18:10:17 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}Posteingang: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:11:02 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl}INBOX: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-13 18:14:51 Error: [ImapMailboxException] Connection error: Can't open mailbox {imap.gmail.com:993/imap/ssl/novalidate-cert}INBOX: invalid remote specification
+#0 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(42): ImapMailbox->initImapStream()
+#1 /Applications/MAMP/htdocs/billingclone2/app/Vendor/ImapMailbox.php(114): ImapMailbox->getImapStream()
+#2 /Applications/MAMP/htdocs/billingclone2/app/Controller/AkquisesController.php(104): ImapMailbox->searchMailbox('ALL')
+#3 [internal function]: AkquisesController->readMail()
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AkquisesController), Array)
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AkquisesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-14 13:41:46 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-14 13:41:46 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-14 17:30:17 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'd0172b13'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('invoices')
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(784): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/CustomersController.php(24): Model->__call('findAllByCustom...', Array)
+#7 /Applications/MAMP/htdocs/billingclone2/app/Controller/CustomersController.php(24): Invoice->findAllByCustomer_id('61', Array, Array)
+#8 [internal function]: CustomersController->view('61')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CustomersController), Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-14 17:31:13 Error: [MissingActionException] Action CustomersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-14 17:31:13 Error: [MissingActionException] Action CustomersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-15 14:17:14 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-15 14:17:14 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-15 14:31:25 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('invoices')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(784): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/app/Controller/CustomersController.php(24): Model->__call('findAllByCustom...', Array)
+#6 /Applications/MAMP/htdocs/billingclone2/app/Controller/CustomersController.php(24): Invoice->findAllByCustomer_id('61', Array, Array)
+#7 [internal function]: CustomersController->view('61')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CustomersController), Array)
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-16 09:36:19 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-16 09:36:20 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-16 09:36:20 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-21 16:12:18 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-21 16:12:18 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-21 16:12:19 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-23 17:23:27 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-23 17:23:27 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-23 17:23:27 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-24 10:47:41 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-24 10:47:41 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-28 08:51:55 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-28 08:51:55 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-28 08:51:55 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-29 17:43:59 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-29 17:43:59 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-30 12:51:21 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-05-30 12:51:21 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-30 12:51:21 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-05 22:48:49 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-06-05 22:48:49 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-19 17:18:11 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-06-19 17:18:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-19 17:18:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-16 11:44:11 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-07-16 11:44:11 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-16 11:44:11 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-18 13:50:24 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-07-18 13:50:26 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-18 13:50:26 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-30 10:55:30 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-07-30 10:55:31 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-30 10:55:31 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-08-14 16:50:36 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-08-14 16:50:36 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-08-14 16:50:37 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-10 11:07:10 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-10-10 11:07:11 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-10 11:07:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-18 12:09:51 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-07-18 12:09:51 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-18 12:09:51 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-14 16:24:58 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3157): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1092): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(3179): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#6 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/billingclone2/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(920): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(883): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/billingclone2/lib/Cake/View/View.php(475): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#13 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-14 16:24:59 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-14 16:25:00 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/billingclone2/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/billingclone2/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

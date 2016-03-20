@@ -1,0 +1,14 @@
+2012-09-21 15:40:42 Notice: Notice (8): Undefined variable: footer_row3 in [/Applications/MAMP/htdocs/billingclone2/app/View/invoices/invoice_pdf.ctp, line 222]
+Trace:
+include - APP/View/invoices/invoice_pdf.ctp, line 222
+View::_evaluate() - CORE/Cake/View/View.php, line 920
+View::_render() - CORE/Cake/View/View.php, line 883
+View::render() - CORE/Cake/View/View.php, line 475
+Controller::render() - CORE/Cake/Controller/Controller.php, line 957
+InvoicesController::invoicePdf() - APP/Controller/InvoicesController.php, line 299
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
