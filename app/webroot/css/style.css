@@ -274,6 +274,7 @@ a.footerlink {text-decoration:none; font-weight:bold; margin: 0 10px 0 0;}
 #menu a {font-size:18px; color:#948f75; font-weight:bold; background:none; padding:3px 8px 1px 8px; margin:0 4px 0 0; display:block; float:left; text-decoration:none; -moz-border-radius:6px; border-radius: 6px; -webkit-border-radius:6px;}
 #menu a:hover, #menu a:active  {background:#ccc; }
 
+[type="tel"],[type="email"],
 [type="text"], input[type="password"], textarea, select {
     -moz-border-radius: 5px 5px 5px 5px;
     background-color: #F0F0F0;
@@ -286,7 +287,7 @@ a.footerlink {text-decoration:none; font-weight:bold; margin: 0 10px 0 0;}
 }
 .input {clear:both; margin:0 0 10px 0;height:30px; position:relative; }
 .input label {width:150px; float:left;}
-.text input, .password input {width:220px; float:left; height:25px;}
+.text input, .password input, .tel input, .email input {width:220px; float:left; height:25px;}
 
 .users_form {
 margin:0 0 20px 0;

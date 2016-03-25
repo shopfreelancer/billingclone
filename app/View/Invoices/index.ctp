@@ -20,7 +20,7 @@ echo '<h2>'.$type_name.'s&uuml;bersicht</h2>'; ?>
 		<td><?php echo '<span class="grey">'.$invoice['Invoice']['id'].'</span>'; ?></td>
 		<td><?php echo $invoice['Invoice']['freeinvoiceid']; ?></td>
 		<td>
-		<?php echo $invoice['Customer']['companyname'].'<br/>'.$invoice['Customer']['firstname'].' '.$invoice['Customer']['lastname'].'<br/>'; ?>
+		<?php //echo $invoice['Customer']['customerDropDrownName'].'<br/>'; ?>
 <?php echo $this->Html->link('Link zu '.$type_name, array('controller' => 'invoices', 'action' => 'view', $invoice['Invoice']['id']));?>
 </td>
 		<td><?php echo $invoice['Invoice']['invoicedate']; ?></td>

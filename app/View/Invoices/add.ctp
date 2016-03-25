@@ -16,21 +16,21 @@ echo '<h2>'.$pagetitle .'</h2>';
 	
 	<?php
 	echo $this->Form->create('Invoice');
-	echo '<div class="input text"><label>Kunde</label><select name="data[Invoice][customer_id]">';
-	foreach($customers_dropdown as $customer){
-		echo '<option value="'.$customer['customers']['id'].'">'.$customer['customers']['companyname'].' '.$customer['customers']['firstname'].' '.$customer['customers']['lastname'].'</option>';
-	}
-	echo '</select></div>';
-	
-	echo '<div class="input text"><label>'.$type_name.'status</label><select name="data[Invoice][invoice_status_id]">';
-	foreach($status_dropdown as $key => $value){
-		if($key == 1){
-			echo '<option selected="selected" value="'.$key.'">'.$value.'</option>';
-		} else {
-			echo '<option value="'.$key.'">'.$value.'</option>';
-		}
-	}
-	echo '</select></div>';
+
+	echo $this->Form->input('Invoice.customer_id', array(
+        'default' => 0,
+        'options' => $customerDropdown,
+        'label' => "Kunde"
+        )
+     );
+
+    echo $this->Form->input('Invoice.invoice_status_id', array(
+            'default' => 1,
+            'options' => $statusDropdown,
+            'label' => "Status"
+        )
+    );
+
 	echo $this->Form->hidden('Invoice.type', array('value' => $type));
 	echo $this->Form->hidden('Invoice.freeinvoiceid', array('value' => $lastfreeinvoiceid));
 

@@ -18,29 +18,18 @@ echo '<h2>'.$pagetitle .'</h2>';
 	<?php
 	echo $this->Form->create('Invoice');
 	echo $this->Form->hidden('id');
-
-	echo '<div class="input text"><label>Kunde</label><select name="data[Invoice][customerid]">';
-	foreach($customers_dropdown as $customer){
-	
-	if($customer['customers']['id'] == $selected_customer){
-		echo '<option selected="selected" value="'.$customer['customers']['id'].'">'.$customer['customers']['companyname'].' '.$customer['customers']['firstname'].' '.$customer['customers']['lastname'].'</option>';
-	} else {
-		echo '<option value="'.$customer['customers']['id'].'">'.$customer['customers']['companyname'].' '.$customer['customers']['firstname'].' '.$customer['customers']['lastname'].'</option>';
-	}
-	}
-
-	echo '</select></div>';
-	
-	echo '<div class="input text"><label>'.$type_name.'sstatus</label><select name="data[Invoice][invoice_status_id]">';
-	foreach($status_dropdown as $key => $value){
-		if($key == $selected_status){
-			echo '<option selected="selected" value="'.$key.'">'.$value.'</option>';
-		} else {
-			echo '<option value="'.$key.'">'.$value.'</option>';
-		}
-	}
-	echo '</select></div>';
-	
+	echo $this->Form->input('Invoice.customerid', array(
+        'default' => $customerId,
+        'options' => $customerDropdown,
+        'label' => "Kunde"
+        )
+     );
+	echo $this->Form->input('Invoice.invoice_status_id', array(
+			'default' => $data['Invoice']['invoice_status_id'],
+			'options' => $statusDropdown,
+			'label' => "Status"
+		)
+	);
 	
 	echo $this->Form->input('Invoice.freeinvoiceid', array('label' => $type_name.'snummer'));
 	echo $this->Form->input('Invoice.invoicedate', array('label' => $type_name.'sdatum'));

@@ -5,7 +5,6 @@ class TextdraftsController extends AppController {
 	public $components = array('Session');
 	
 
-	
 	public function index() {	
 		$this->set('textdrafts', $this->Textdraft->find('all'));
 	}
@@ -24,7 +23,6 @@ class TextdraftsController extends AppController {
 	public function edit($id) {
 	
 	$this->Textdraft->id = $id;
-	//$this->set('id', $id);
 	
 	if (empty($this->data)) {	  
             $this->data = $this->Textdraft->read();

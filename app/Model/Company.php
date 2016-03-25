@@ -4,19 +4,19 @@ public $name = 'Company';
 
 public $validate = array(
 		'lastname' => array(
-			'rule' => 'notEmpty',
+			'rule' => 'notBlank',
 			'message' => 'Bitte ausfüllen'
 		),
 		'street' => array(
-			'rule' => 'notEmpty',
+			'rule' => 'notBlank',
 			'message' => 'Bitte ausfüllen'
 		),
 		'postcode' => array(
-			'rule' => 'notEmpty',
+			'rule' => 'notBlank',
 			'message' => 'Bitte ausfüllen'
 		),
 		'city' => array(
-			'rule' => 'notEmpty',
+			'rule' => 'notBlank',
 			'message' => 'Bitte ausfüllen'
 		),
 	);
