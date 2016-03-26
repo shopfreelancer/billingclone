@@ -173,6 +173,13 @@ Configure::write('Dispatcher.filters', array(
     mcrypt_module_close($td);
     Configure::write('Cryptable.iv', $iv);
 
+	if(!function_exists("mcrypt_encrypt")) {
+		echo "php extension mcrypt not installed";
+	}
+	if(empty(Configure::read('Cryptable.key'))) {
+		echo "no cryptable key in bootstrap.php found";
+	}
+
 	Configure::write('Invoice.Path',dirname(dirname(__FILE__)).'/Documents/');
 
 /**
