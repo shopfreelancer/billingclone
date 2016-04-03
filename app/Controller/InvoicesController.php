@@ -5,7 +5,7 @@ class InvoicesController extends AppController
 {
     public $helpers = array('Html', 'Form', 'Price', 'Time');
     public $name = 'Invoices';
-    public $components = array('Session', 'RequestHandler', 'Emailhelper');
+    public $components = array('Session', 'RequestHandler', 'Emailhelper','InvoiceIdHelper');
 
     public $paginate = array(
         'limit' => 20,
@@ -55,24 +55,21 @@ class InvoicesController extends AppController
 
     public function edit($id)
     {
-        $this->Invoice->id = $id;
+        $this->loadModel('Customer');
+
+        if(empty($this->Invoice->findById($id)))
+            $this->redirect(array('action' => 'index'));
+
 
         if (empty($this->request->data)) {
 
-
-            $this->set('id', $id);
-
-            // has to be called before Invoice model is loaded, otherwise error
-            $this->set("customerDropdown", $this->getCustomerDropDown());
-
             $data = $this->Invoice->findById($id);
-
-            $this->set('data',$data);
-            $this->set('type', $data['Invoice']['type']);
-
-            $this->set('customerId', $data['Invoice']['customer_id']);
             
+            $this->set('type', $data['Invoice']['type']);
+            $this->set("customerDropdown", $this->getCustomerDropDown());
             $this->set("statusDropdown", $this->getStatusDropDown());
+
+            $this->request->data = $data;
 
 
         } else {
@@ -83,68 +80,83 @@ class InvoicesController extends AppController
         }
     }
 
+    /**
+     * add a new invoice. Fetch default data values for input fields.
+     * @param string $type
+     */
     public function add($type = 'invoice')
     {
+        $this->set('type', $type);
+        $this->loadModel('InvoiceType');
 
-        if (empty($this->request->data)) {
+        $invoice_type_id = $this->InvoiceType->field(
+            'id',
+            array('invoicetype' => $type)
+        );
 
-            $this->set('type', $type);
-
-            // Default values for Form Fields
-            // Last used invoice ID
-            $lastfreeinvoiceid = $this->getNextInvoiceId($type);
-
-            $this->set("lastfreeinvoiceid", $lastfreeinvoiceid);
-        } else {
-            $this->set("lastfreeinvoiceid", 1);
+        if($invoice_type_id === false){
+            $this->redirect(array('action' => 'index'));
         }
 
+        /**
+         * find with conditions on related model throws errors.
+         * so solving it the ugly way with joins
+         */
+        $this->loadModel('InvoiceTextType');
+        $invoiceTextTypes = $this->InvoiceTextType->find('all',
+        array(
+            'conditions' => array(
+                'InvoiceTextType.invoice_type_id' => $invoice_type_id,
+                'AND' => array(
+                    'InvoiceTextType.invoice_type_id' => "Textdraft.invoice_type_id"
+                )
+            )
+        )
+
+        );
+        $this->set('invoiceTextTypes',$invoiceTextTypes);
+
+        $this->loadModel('Customer');
+
+        $this->set("freeinvoiceid", $this->InvoiceIdHelper->getNextInvoiceId($type));
         $this->set("customerDropdown", $this->getCustomerDropDown());
-
         $this->set("statusDropdown", $this->getStatusDropDown());
-
-        // Default Values
-        $default_top = $this->Invoice->query('SELECT id, textdraft, field FROM textdrafts WHERE type = \'' . $type . '\' AND field = \'top\' AND defaultvalue = true ORDER BY id');
-        $default_bottom = $this->Invoice->query('SELECT id, textdraft, field FROM textdrafts WHERE type = \'' . $type . '\' AND field = \'bottom\' AND defaultvalue = true ORDER BY id');
-        $default_notebottom = $this->Invoice->query('SELECT id, textdraft, field FROM textdrafts WHERE type = \'' . $type . '\' AND field = \'notebottom\' AND defaultvalue = true ORDER BY id');
-
-        if (!empty($default_top)) {
-            $this->set("default_top", $default_top['0']['textdrafts']['textdraft']);
-        } else {
-            $this->set("default_top", '');
-        }
-
-        if (!empty($default_bottom)) {
-            $this->set("default_bottom", $default_bottom['0']['textdrafts']['textdraft']);
-        } else {
-            $this->set("default_bottom", '');
-        }
-
-        if (!empty($default_notebottom)) {
-            $this->set("default_notebottom", $default_notebottom['0']['textdrafts']['textdraft']);
-        } else {
-            $this->set("default_notebottom", '');
-        }
-
+        
 
         if (!empty($this->request->data)) {
-
-            $billingadress = $this->Invoice->query('SELECT id, companyname, firstname, lastname, street, postcode, city, country FROM customers WHERE id = ' . $this->request->data['Invoice']['customer_id'] . ' ORDER BY id DESC;');
-
-            $this->request->data['Invoice_texts']['billingaddress'] = $billingadress['0']['customers']['companyname'] . chr(13) . chr(10) . $billingadress['0']['customers']['firstname'] . ' ' . $billingadress['0']['customers']['lastname'] . chr(13) . chr(10) . $billingadress['0']['customers']['street'] . chr(13) . chr(10) . $billingadress['0']['customers']['postcode'] . ' ' . $billingadress['0']['customers']['city'] . chr(13) . chr(10) . $billingadress['0']['customers']['country'];
+            var_dump($this->request->data);
+            exit();
 
             if ($this->Invoice->saveAll($this->request->data)) {
 
-                if ($this->request->data['Invoice']['type'] == 'invoice') {
+                if ($type === 'invoice') {
                     $message = 'Neue Rechnung angelegt.';
                 }
-                if ($this->request->data['Invoice']['type'] == 'offer') {
+                if ($type === 'offer') {
                     $message = 'Neues Angebot angelegt.';
                 }
                 $this->Session->setFlash($message);
                 $this->redirect(array('action' => 'view', $this->Invoice->id));
             }
         }
+    }
+
+    /**
+     * Fetches Customer address for input form.
+     * @param $customerId
+     */
+    public function getCustomerBillingAddressAjax($customerId)
+    {
+        if (!$this->request->is('ajax')) {
+            die();
+        }
+        $this->loadModel('Customer');
+        $customer = $this->Customer->find('first',
+            array(
+                'conditions' => array('id' => $customerId)
+            )
+        );
+        $this->set('customer',$customer);
     }
 
     public function clonen($id, $typeswitch = null)
@@ -173,7 +185,7 @@ class InvoicesController extends AppController
 
         $invoice['Invoice']['date'] = date('d.m.Y');
         $invoice['Invoice']['emailsent'] = '0000-00-00 00:00:00';
-        $invoice['Invoice']["freeinvoiceid"] = $this->getNextInvoiceId($invoice['Invoice']['type']);
+        $invoice['Invoice']["freeinvoiceid"] = $this->InvoiceIdHelper->getNextInvoiceId($invoice['Invoice']['type']);
 
         if ($this->Invoice->saveAll($invoice)) {
             $query = $this->Invoice->query("SELECT id,type FROM invoices ORDER BY id DESC LIMIT 1 ;");
@@ -210,8 +222,7 @@ class InvoicesController extends AppController
 
         $invoice = $this->Invoice->read('', $id);
 
-
-        $invoice = $this->calculatePrice($invoice);
+        $invoice = $this->calculateInvoicePrice($invoice);
 
         if ($this->Invoice->saveAll($invoice)) {
             if ($invoice['Invoice']['type'] == 'invoice') {
@@ -227,7 +238,13 @@ class InvoicesController extends AppController
         }
     }
 
-    public function calculatePrice($invoice)
+    /**
+     * Sums up all invoice items and calculates total prices of invoice
+     * 
+     * @param $invoice
+     * @return mixed
+     */
+    public function calculateInvoicePrice($invoice)
     {
         $this->autoRender = false;
 
@@ -244,7 +261,6 @@ class InvoicesController extends AppController
             $amounttotal = $amounttotal + $bruttoitem;
 
         }
-
 
         $invoice['Invoice']['amounttotal'] = $amounttotal;
         $invoice['Invoice']['amountnet'] = $amountnet;
@@ -299,7 +315,7 @@ class InvoicesController extends AppController
     }
 
 
-    public function sendEmailReview($id = '')
+    public function validateEmailBeforeSend($id = '')
     {
 
         $invoice = $this->Invoice->read(null, $id);
@@ -403,25 +419,6 @@ class InvoicesController extends AppController
         $this->set($params);
     }
 
-    /**
-     * Fortlaufende Nummerierung fuer Angebote und Rechnungen
-     * hole letzte Nummer aus DB plus 1
-     * @param string (entweder invoice oder offer)
-     */
-    public function getNextInvoiceId($type = 'invoice')
-    {
-        $query = $this->Invoice->query('SELECT freeinvoiceid FROM invoices WHERE type = \'' . $type . '\' ORDER BY id DESC LIMIT 1 ;');
-
-        $lastfreeinvoiceid = '';
-
-        if (!empty($query['0']['invoices']["freeinvoiceid"])) {
-            $firstpart = substr($query['0']['invoices']["freeinvoiceid"], 0, 6);
-            $secondpart = ((int)substr($query['0']['invoices']["freeinvoiceid"], 6, strlen($query['0']['invoices']["freeinvoiceid"]))) + 1;
-            $lastfreeinvoiceid = $firstpart . $secondpart;
-        }
-
-        return $lastfreeinvoiceid;
-    }
 
     /**
      * Returns simple id - name array to populate drop down in view
@@ -430,8 +427,6 @@ class InvoicesController extends AppController
      */
     public function getCustomerDropDown()
     {
-        $this->loadModel('Customer');
-
         $customerDropDown = $this->Customer->find('list',[
             'conditions'=>['billable'=>1],
             'order'=>['id DESC'],

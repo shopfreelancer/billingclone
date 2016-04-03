@@ -142,7 +142,7 @@ echo $this->Html->link('PDF erzeugen', array('action' => 'invoicePdf', $invoice[
 echo $this->Html->link('Download', array('action' => 'download', $invoice['Invoice']['id']), array('class' => 'newbutton')); ?><br style="clear:both"/>
 <?php
 if($this->Time->format('Y',$invoice['Invoice']['emailsent']) < 2000){
-echo $this->Html->link('PDF als Email senden', array('action' => 'sendEmailReview', $invoice['Invoice']['id']), array('class' => 'newbutton'));
+echo $this->Html->link('PDF als Email senden', array('action' => 'validateEmailBeforeSend', $invoice['Invoice']['id']), array('class' => 'newbutton'));
 } else {
 echo "Email bereits versandt am ".$this->Time->format('d.m.Y H:i',$invoice['Invoice']['emailsent'])."<br/>";
 echo $this->Html->link('nochmal senden', array('action' => 'sendEmailReview', $invoice['Invoice']['id']));

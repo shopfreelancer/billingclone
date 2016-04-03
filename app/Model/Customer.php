@@ -1,7 +1,6 @@
 <?php
 App::uses('AuthComponent', 'Controller/Component');
 class Customer extends AppModel{
-	public $name = 'Customer';
 
     public $virtualFields = array(
         'customerDropDrownName' => 'CONCAT(Customer.companyname ," ",Customer.firstname ," ", Customer.lastname)'
