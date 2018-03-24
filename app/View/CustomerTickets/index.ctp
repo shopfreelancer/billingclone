@@ -17,22 +17,23 @@
 	} else {
 		$rowcount = 1;
 		foreach ($CustomerTickets as $CustomerTicket){
+     
 		($rowcount&1 == 1) ?  $rowclass = 'roweven' : $rowclass = 'rowodd'
 		?>
 		<tr class="<?php echo $rowclass;?>">
-			<td><?php echo '<span class="grey">'.$CustomerTicket['ct']['id'].'</span>'; ?></td>
-			<td><?php echo $CustomerTicket['customers']['companyname'];
-			echo '<br/><span class="grey">'.$CustomerTicket['customers']['firstname'].' '.$CustomerTicket['customers']['lastname'].'</span>';
+			<td><?php echo '<span class="grey">'.$CustomerTicket['CustomerTicket']['id'].'</span>'; ?></td>
+			<td><?php echo $CustomerTicket['Customer']['companyname'];
+			echo '<br/><span class="grey">'.$CustomerTicket['Customer']['firstname'].' '.$CustomerTicket['Customer']['lastname'].'</span>';
 			?></td>
-			<td><?php echo $CustomerTicket['ct']['title']; ?></td>
-			<td><?php echo $CustomerTicket['ct']['description']; 
+			<td><?php echo $CustomerTicket['CustomerTicket']['title']; ?></td>
+			<td><?php echo $CustomerTicket['CustomerTicket']['description']; 
 			/*
 			if(!empty($CustomerTicket['ct']['comment'])){
 			echo '<br/><br/>Kommentar:<br/>'.$CustomerTicket['ct']['comment'];
 			}
 			*/
 			?></td>
-			<td><?php echo $this->Hours->formatHours($CustomerTicket['ct']['hours'],$CustomerTicket['ct']['minutes']); ?></td>
+			<td><?php echo $this->Hours->formatHours($CustomerTicket['CustomerTicket']['hours'],$CustomerTicket['CustomerTicket']['minutes']); ?></td>
 		</tr>
 		
 		<?php

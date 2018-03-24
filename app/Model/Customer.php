@@ -24,7 +24,7 @@ class Customer extends AppModel{
             'limit'        => '',
             'dependent'=> false
         ),
-		 'Customer_tickets' => array(
+        'Customer_tickets' => array(
             'className'     => 'Customer_tickets',
             'foreignKey'    => 'customer_id',
             'conditions'    => '',
