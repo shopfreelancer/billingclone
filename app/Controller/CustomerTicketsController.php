@@ -9,28 +9,14 @@ class CustomerTicketsController extends AppController {
     public $components = array('Session', 'RequestHandler', 'Emailhelper');
     public $paginate;
 
+    /**
+     * Action displays all ticket that are not billed yet
+     */
     public function index() {
 
-        $conditions['conditions'] = array(
-            'active = 1');
+        $conditions['conditions'] = array('active = 1');
 
         $CustomerTickets = $this->CustomerTicket->find('all', $conditions);
-
-        $this->set('CustomerTickets', $CustomerTickets);
-    }
-
-    public function statistic($time = null) {
-
-        if ($time = null) {
-            $time = 'now()';
-        }
-
-        $CustomerTickets = $this->CustomerTicket->query("
-			SELECT customers.companyname,customers.firstname,customers.lastname, ct.id, ct.title, ct.description, ct.hours, ct.minutes, ct.comment 
-			FROM customer_tickets AS ct 
-			left JOIN customers AS customers ON (ct.customer_id = customers.id) 
-			WHERE ct.active = 1 ORDER BY ct.id desc;
-			");
 
         $this->set('CustomerTickets', $CustomerTickets);
     }
@@ -70,45 +56,46 @@ class CustomerTicketsController extends AppController {
     }
 
     /**
-     * Helper Method to send ticket notification via Email
-     *
+     * Helper Method to send ticket notification via Email to customer
+     * 
+     * @param type $id
      */
     public function sendEmail($id = '') {
         $this->autoRender = false;
 
         $this->CustomerTicket->id = $id;
-        $CustomerTicket = $this->CustomerTicket->read();
-
-        $customer = $this->CustomerTicket->query('SELECT email,firstname,lastname,salutation,customer_rate,email_salutation,email_firstname,email_lastname
-		 FROM customers WHERE id = "' . $CustomerTicket["CustomerTicket"]["customer_id"] . '"');
-        $customer = $customer[0];
-        $company = $this->CustomerTicket->query('SELECT email, emailsignature, email_sie,email_du FROM companies WHERE id = 1');
-        $company = $company[0];
+        $customerTicket = $this->CustomerTicket->read();
 
 
-
-        if (empty($customer["customers"]["email"])) {
-            $this->Session->setFlash('Bitte Email des Kunden in Firmendaten eintragen.');
-            $this->redirect(array('controller' => 'customers', 'action' => 'view', $CustomerTicket["CustomerTicket"]["customer_id"]));
+        if (empty($customerTicket["Customer"]["email"])) {
+            $this->Session->setFlash('Bitte die Email-Adresse des Kunden in die Firmendaten eintragen.');
+            $this->redirect(array('controller' => 'customers', 'action' => 'view', $customerTicket["CustomerTicket"]["customer_id"]));
         }
 
+        $this->loadModel('Company');
+        $company = $this->Company->find('first');
 
-        $subject = $this->Emailhelper->generateTicketEmailSubject($CustomerTicket);
-        $body = $this->Emailhelper->generateTicketEmailBody($customer, $company, $CustomerTicket);
+
+        $subject = $this->Emailhelper->generateTicketEmailSubject($customerTicket);
 
 
         $Email = new CakeEmail();
         $Email->config('smtp');
-        $Email
-                ->to($customer['customers']["email"]) // Hier noch Kundenmail eintragen
-                ->replyTo($company['companies']["email"])
-                ->bcc($company['companies']["email"])
+
+        $Email->viewVars(array(
+                    'customerTicket' => $customerTicket,
+                    'company' => $company
+                        )
+                )->template('ticketemail')
+                ->to($customerTicket['Customer']["email"]) // Hier noch Kundenmail eintragen
+                ->replyTo($company['Company']["email"])
+                ->bcc($company['Company']["email"])
                 ->emailFormat('html')
                 ->subject($subject)
-                ->send($body);
+                ->send();
 
         $this->Session->setFlash('Email wurde versandt.');
-        $this->redirect(array('controller' => 'customers', 'action' => 'view', $CustomerTicket["CustomerTicket"]["customer_id"]));
+        $this->redirect(array('controller' => 'customers', 'action' => 'view', $customerTicket["CustomerTicket"]["customer_id"]));
     }
 
 }
