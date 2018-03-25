@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if($type == 'invoice') {
 	$pagetitle = 'Neue Rechnung';
@@ -13,7 +13,7 @@ $this->set("title_for_layout",$pagetitle);
 echo '<h2>'.$pagetitle .'</h2>';
 ?>
 <div id="mainleft">	
-	
+
 	<?php
 	echo $this->Form->create('Invoice');
 
@@ -57,12 +57,12 @@ echo '<h2>'.$pagetitle .'</h2>';
 		echo $this->Form->input("Invoice_texts.".$invoiceTextType['InvoiceTextType']['id'], array('type' => 'textarea','label' => $invoiceTextType['InvoiceTextType']['description'], 'default' => $default, 'escape' => true));
 	}
 	?>
-	<div class="formfooter">
+    <div class="formfooter">
 	<?php
 	echo $this->Html->link('Abbrechen', array('controller' => 'invoices', 'action' => 'index'), array('class' =>'cancelbutton'));
 	echo $this->Form->end( array('name' => 'submit', 'class' => 'submitbutton clearfix', 'label' => false,'div' => false));
 	?>
-	</div>
-	
+    </div>
+
 </div>
 <br style="clear:both;"/>

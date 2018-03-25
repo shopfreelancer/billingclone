@@ -6,16 +6,15 @@ class Customer extends AppModel{
         'customerDropDrownName' => 'CONCAT(Customer.companyname ," ",Customer.firstname ," ", Customer.lastname)'
     );
 
-
-	public $actsAs = array( 
+    public $actsAs = array( 
         'Cryptable' => array( 
             'fields' => array( 
                 'zdata' 
             ) 
         ) 
     ); 
-	
-	public $hasMany = array(
+
+    public $hasMany = array(
         'Customer_blog' => array(
             'className'     => 'Customer_blogs',
             'foreignKey'    => 'customer_id',

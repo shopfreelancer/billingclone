@@ -22,7 +22,7 @@ class InvoicesController extends AppController
         );
 
         $invoices = $this->paginate('Invoice');
-
+       
         $this->set('invoices', $invoices);
         $this->set('type_name', 'Rechnung');
         $this->set('type', 'invoice');
