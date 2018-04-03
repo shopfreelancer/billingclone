@@ -2,7 +2,7 @@
 
 <h2>Tickets abrechnen</h2>
 <div id="mainleft">	
-<?php echo $this->Form->create(null,array('action' => 'importtickets')); 
+<?php echo $this->Form->create(null,array('url' => 'importtickets')); 
 echo $this->Form->hidden('parentid', array('value' => $parentid));
 ?>
 

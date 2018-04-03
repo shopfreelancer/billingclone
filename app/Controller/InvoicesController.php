@@ -124,8 +124,6 @@ class InvoicesController extends AppController
         
 
         if (!empty($this->request->data)) {
-            var_dump($this->request->data);
-            exit();
 
             if ($this->Invoice->saveAll($this->request->data)) {
 
@@ -315,10 +313,15 @@ class InvoicesController extends AppController
     }
 
 
+    /**
+     * @todo finish this method
+     * @param type $id
+     */
     public function validateEmailBeforeSend($id = '')
     {
 
         $invoice = $this->Invoice->read(null, $id);
+        
 
         if (empty($invoice["Customer"]["firstname"]) && empty($invoice["Customer"]["email_firstname"])) {
             $this->Session->setFlash('Bitte den Vornamen des Kunden in Firmendaten eintragen.');
@@ -341,14 +344,8 @@ class InvoicesController extends AppController
             $this->Session->setFlash('Bitte erst das PDF erzeugen.');
             $this->redirect(array('action' => 'view', $id));
         }
-
-        $subject = $this->Emailhelper->generateInvoiceEmailSubject($invoice);
-        $body = $this->Emailhelper->generateInvoiceEmailBody($invoice);
-
-        $this->set('invoice', $invoice);
-        $this->set('subject', $subject);
-        $this->set('body', $body);
-        $this->set('filename', $filename);
+        
+        return true;
     }
 
 
@@ -398,8 +395,7 @@ class InvoicesController extends AppController
         $invoice = $this->Invoice->read(null, $id);
 
         $document_name = $this->Emailhelper->getPdfName($invoice);
-
-
+        
         $filename = $this->Emailhelper->getfullPdfPath($invoice);
         if (!file_exists($filename)) {
             $this->Session->setFlash('Bitte erst das PDF erzeugen.');
@@ -408,7 +404,6 @@ class InvoicesController extends AppController
 
 
         // Sende die Datei an den Browser
-
         $params = array(
             'id' => $document_name,
             'name' => $document_name,

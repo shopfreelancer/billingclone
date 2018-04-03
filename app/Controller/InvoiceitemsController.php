@@ -101,23 +101,21 @@ class InvoiceitemsController extends AppController {
 		
 			$this->loadModel('Invoices');
 			$invoice = $this->Invoices->findById($parentid);
-			
-			
-
 	
 			$this->set('parentid', $parentid);
 			$this->loadModel('CustomerTicket');
 			
 			$customerQuery = $this->CustomerTicket->find('all', array(
-		   'conditions' => array( 'customer_id' => $invoice['Invoices']['customer_id'],'active' => '1' )
+                            'conditions' => array( 
+                                'customer_id' => $invoice['Invoices']['customer_id'],
+                                'active' => '1' )
 			   ));
+                        
 			   if(!empty($customerQuery[0])){
 			   $this->set('CustomerTickets', $customerQuery);
 			   } else {
 			   $this->set('CustomerTicketsText', 'Keine buchbaren Tickets gefunden');
 			   }
-			
-	
 			   
 		}
 		
@@ -133,9 +131,6 @@ class InvoiceitemsController extends AppController {
 				if($id != 0){
 					$CustomerTicket = $this->CustomerTicket->findById($id);
 				
-
-
-					
 					if(empty($CustomerTicket['CustomerTicket']['price_rate'])){
 						$this->loadModel('Customer');
 						$Customer = $this->Customer->findById($CustomerTicket['CustomerTicket']['customer_id']);
@@ -154,11 +149,11 @@ class InvoiceitemsController extends AppController {
 						//App::import('Helper', 'Hours'); // loadHelper('Html'); in CakePHP 1.1.x.x
 						//$hours = new HoursHelper($this->view);
 						
-						 $view = new View($this);
-       					 $hours  = $view->loadHelper('Hours');
+					$view = new View($this);
+       					$hours  = $view->loadHelper('Hours');
 						
-						$appendix = 'Aufgewendete Zeit: '.$hours->formatHours($CustomerTicket['CustomerTicket']['hours'],$CustomerTicket['CustomerTicket']['minutes']);
-						$appendix .= '<br/>zum vereinbarten Stundensatz von '.$ticket_pricerate.' EUR zzgl. USt'; 					
+					$appendix = 'Aufgewendete Zeit: '.$hours->formatHours($CustomerTicket['CustomerTicket']['hours'],$CustomerTicket['CustomerTicket']['minutes']);
+					$appendix .= '<br/>zum vereinbarten Stundensatz von '.$ticket_pricerate.' EUR zzgl. USt'; 					
 					
 					$invoiceitem = array(
 						'id' => '',
@@ -171,19 +166,15 @@ class InvoiceitemsController extends AppController {
 						'taxrate' => $CustomerTicket['CustomerTicket']['taxrate']
 					);
 					$this->Invoiceitem->save($invoiceitem);
-				$sortorderCounter ++;
-				$insertedIDs[] = $CustomerTicket['CustomerTicket']['id'];
+                                        $sortorderCounter ++;
+                                        
+                                        $this->CustomerTicket->id = $id;
+                                        $this->CustomerTicket->save(array('active' => 0));
 				}	
+                                
 			}
 			
-			
-		
-			$this->CustomerTicket->updateAll(
-				array( 'active' => '0' ),
-				array( 'id' => $insertedIDs )
-			);
-			
-			
+	
 			$this->Session->setFlash('Vorlage wurde eingefügt.');
 			$this->redirect(array('controller' => 'invoices','action' => 'save', $this->request->data['Invoiceitem']['parentid']));	
 			}
