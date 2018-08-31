@@ -37,7 +37,7 @@ echo 'www '. $this->Html->link($customer['Customer']['www'], $customer['Customer
 </div>
 
 <?php if(!empty($customer['Customer']['zdata'])){
-echo '<div class="customerviewnote"><b>Zugangsdaten Sec</b><br/>'. nl2br($customer['Customer']['zdata']).'<br/></div>';
+echo '<div class="customerviewnote"><b>Zugangsdaten Sec</b><br/>'. nl2br(htmlspecialchars($customer['Customer']['zdata'])).'<br/></div>';
 }?>
 
 <?php

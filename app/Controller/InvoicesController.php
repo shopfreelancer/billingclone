@@ -222,7 +222,7 @@ class InvoicesController extends AppController
 
         $invoice = $this->calculateInvoicePrice($invoice);
 
-        if ($this->Invoice->saveAll($invoice)) {
+        if ($this->Invoice->save($invoice)) {
             if ($invoice['Invoice']['type'] == 'invoice') {
                 $message = 'Die Rechnung wurde gespeichert.';
             }
